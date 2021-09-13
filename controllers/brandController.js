@@ -26,7 +26,7 @@ const addBrand = async (req, res, next) => {
     try {
         const data = req.body;
         const insert = await brandData.createBrand(data);
-        res.send(insert);
+        res.send(insert[0]);
     } catch (error) {
         res.status(400).send(error.message);
     }

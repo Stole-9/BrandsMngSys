@@ -15,5 +15,5 @@ const loadSqlQueries = async (folderName) => {
 }
 
 module.exports = {
-    loadSqlQueries
+    loadSqlQueries 
 }
